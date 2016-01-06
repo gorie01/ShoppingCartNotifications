@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 MageWorkshop. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+            <block class="MageWorkshop\ShoppingCartNotifications\Block\Notifications"
+                   name="shopping-cart-notifications"
+                   ifconfig="mage_workshop/shopping_cart_notifications/enabled"
+                   template="shopping-cart-notifications.phtml"
+            />
+        </referenceContainer>
+    </body>
+</page>
