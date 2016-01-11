@@ -1,0 +1,22 @@
+{
+    "name": "mageworkshop/module-shopping-cart-notifications",
+    "description": "MageWorkshop Shopping Cart Notifications for the customer to clearly know if the item was successfully added to the Shopping Cart",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "magento/module-catalog": "*",
+        "magento/magento-composer-installer": "*"
+    },
+    "type": "magento2-module",
+    "version": "2.0.0",
+    "license": [
+        "GPL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageWorkshop\\ShoppingCartNotifications\\": ""
+        }
+    }
+}
