@@ -10,7 +10,7 @@
         <referenceContainer name="after.body.start">
             <block class="MageWorkshop\ShoppingCartNotifications\Block\Notifications"
                    name="shopping-cart-notifications"
-                   ifconfig="mage_workshop/shopping_cart_notifications/enabled"
+                   ifconfig="mageworkshop_shoppingcartnotifications/general/enabled"
                    template="shopping-cart-notifications.phtml"
             />
         </referenceContainer>

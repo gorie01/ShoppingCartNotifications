@@ -9,11 +9,12 @@
 
 <script type="text/x-magento-init">
     {
-        "[data-role=tocart-form], .form.map.checkout": {
+        "[data-role=tocart-form], .form.map.checkout, #product_addtocart_form, #wishlist-view-form, .action.tocart": {
             "mageWorkshopShoppingCartNotifications": {
-                "loaderEnabled"        : <?php /* @escapeNotVerified */ echo $block->getLoaderEnabled(); ?>,
-                "notificationsEnabled" : <?php /* @escapeNotVerified */ echo $block->getNotificationsEnabled(); ?>,
-                "autoHideDelay"        : <?php /* @escapeNotVerified */ echo $block->getAutoHideDelay(); ?>
+                "loaderEnabled"              : <?php /* @escapeNotVerified */ echo $block->getLoaderEnabled(); ?>,
+                "notificationsEnabled"       : <?php /* @escapeNotVerified */ echo $block->getNotificationsEnabled(); ?>,
+                "autoHideDelay"              : <?php /* @escapeNotVerified */ echo $block->getAutoHideDelay(); ?>,
+                "disableDefaultNotification" : <?php /* @escapeNotVerified */ echo $block->getDefaultNotificationIsDisabled(); ?>
             }
         }
     }

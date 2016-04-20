@@ -7,13 +7,13 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <mage_workshop>
-            <shopping_cart_notifications>
+        <mageworkshop_shoppingcartnotifications>
+            <general>
                 <enabled>1</enabled>
                 <loader_enabled>1</loader_enabled>
                 <notifications_enabled>1</notifications_enabled>
                 <auto_hide_delay>5000</auto_hide_delay>
-            </shopping_cart_notifications>
-        </mage_workshop>
+            </general>
+        </mageworkshop_shoppingcartnotifications>
     </default>
 </config>

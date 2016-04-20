@@ -10,11 +10,14 @@ use Magento\Store\Model\ScopeInterface;
 
 class Notifications extends AbstractBlock
 {
-    const XML_PATH_LOADER_ENABLED = 'mage_workshop/shopping_cart_notifications/loader_enabled';
+    const XML_PATH_LOADER_ENABLED                 = 'mageworkshop_shoppingcartnotifications/general/loader_enabled';
 
-    const XML_PATH_NOTIFICATION_ENABLED = 'mage_workshop/shopping_cart_notifications/notifications_enabled';
+    const XML_PATH_NOTIFICATION_ENABLED           = 'mageworkshop_shoppingcartnotifications/general/notifications_enabled';
 
-    const XML_PATH_AUTO_HIDE_DELAY = 'mage_workshop/shopping_cart_notifications/auto_hide_delay';
+    const XML_PATH_AUTO_HIDE_DELAY                = 'mageworkshop_shoppingcartnotifications/general/auto_hide_delay';
+
+    const XML_PATH_DEFAULT_NOTIFICATIONS_DISABLED = 'mageworkshop_shoppingcartnotifications/general/default_notifications_disabled';
+
 
     /**
      * @return int
@@ -38,5 +41,13 @@ class Notifications extends AbstractBlock
     public function getAutoHideDelay()
     {
         return (int) $this->_scopeConfig->getValue(self::XML_PATH_AUTO_HIDE_DELAY, ScopeInterface::SCOPE_STORE);
+    }
+
+    /**
+     * @return bool
+     */
+    public function getDefaultNotificationIsDisabled()
+    {
+        return (int) $this->_scopeConfig->getValue(self::XML_PATH_DEFAULT_NOTIFICATIONS_DISABLED, ScopeInterface::SCOPE_STORE);
     }
 }

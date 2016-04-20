@@ -13,7 +13,7 @@
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
                             <resource id="MageWorkshop_Core::config" title="MageWorkshop">
-                                <resource id="MageWorkshop_ShoppingCartNotifications::config_shoppingCartNotifications" title="Shopping Cart Notifications" />
+                                <resource id="MageWorkshop_ShoppingCartNotifications::config_shopping_cart_notifications" title="Shopping Cart Notifications" sortOrder="200" />
                             </resource>
                         </resource>
                     </resource>
